@@ -4,7 +4,7 @@ const userSchema = new mongoose.Schema(
   {
     profileImage : {
       type : String,
-      required : true,
+      required : false,
     },
     username: {
       type: String,
