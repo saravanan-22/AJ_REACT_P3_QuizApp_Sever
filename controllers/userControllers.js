@@ -119,6 +119,7 @@ export const updateUserData = (req, res) => {
   const { id } = req.params;
   const newData = req.body;
   User.findByIdAndUpdate(id, {
+    profileImage : newData.userImage,
     username: newData.username,
     email: newData.email,
     password: newData.password,
